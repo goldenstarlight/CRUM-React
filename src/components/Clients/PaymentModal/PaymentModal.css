@@ -1,0 +1,160 @@
+.client-payment-container {
+    width: 600px;
+    min-width: 600px;
+    height: 500px;
+    justify-content: flex-start;
+    overflow-x: hidden;
+}
+
+.payment-top-row-container {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+}
+
+.add-pay {
+    font-size: 1.3em;
+    position: absolute;
+    right: 20px;
+}
+
+.add-pay:hover {
+    color: #4b4b4b;
+}
+
+.top-row-input {
+   margin-bottom: 50px !important;
+}
+
+.row-input {
+    width: 80%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.row-input:focus {
+    border-bottom: 1px solid #777777;
+}
+
+.progress-bar {
+    height: 20px;
+    width: 50%;
+    overflow: hidden;
+    border-radius: 3px;
+    background: #dcdcdc;
+    position: relative;
+}
+
+.progress-completed {
+    height: 100%;
+    min-width: fit-content;
+    max-width: 100%;
+    padding: 0px 2px;
+    font-size: 0.8em;
+    font-weight: 600;
+    transition: width 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.progress-completed p {
+    margin: 0px 2px;
+}
+
+.no-progress {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: black;
+}
+
+nav.modal-menu-bar {
+    width: fit-content;
+    padding-top: 20px;
+    display: flex;
+    border-radius: 20px;
+    font-size: 0.8em;
+}
+
+p.modal-menu-item {
+    background: #f1f1f1;
+    padding: 8px;
+    cursor: pointer;
+}
+
+p.modal-menu-item:nth-child(1){
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+p.modal-menu-item:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+p.modal-menu-item:hover {
+    background: #e2e2e2;
+}
+
+.row {
+    width: 100%;
+    height: 40px;
+    background: #f9f9f9;
+    margin: 10px 0px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    overflow: visible;
+}
+
+.row:nth-child(odd){
+    background: #ebebeb;
+}
+
+.pay {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pay-amount {
+    width: 20%;
+    font-weight: 600;
+    border-right: 1px solid #cdcdcd;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.pay-date {
+    width: 30%;
+    justify-content: center;
+    border-right: 1px solid #cdcdcd;
+    position: relative;
+    overflow: visible;
+}
+
+.pay-description {
+    width: 50%;
+    padding-left: 20px;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.payment-save-btn {
+    padding-bottom: 10px;
+}
+
+.row-delete {
+    position: absolute;
+    right: 20px;
+    font-size: 0.9em;
+    color: #606060;
+}
+
+.row-delete:hover {
+    color: black;
+}

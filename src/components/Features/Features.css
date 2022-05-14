@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+.features{
+    height: fit-content;
+}
+
+.features-grid{
+    height: 50vh;
+    background-color: #f9f6f6;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.feature-item {
+    height: fit-content;
+    grid-column: span 4; 
+    grid-row: span 12;
+    text-align: center;
+    color: #575757;
+    align-self: center;
+    justify-self: center;
+    padding: 0% 20%;
+}
+
+.feature-item p {
+    line-height: 25px;
+}
+
+.feature-item i {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.action-list {
+    height: 60vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100%
+}
+
+.action-list-text{
+    grid-column: span 5;
+    min-width: 500px;
+    padding-right: 15%;
+    font-size: 30px;
+    font-family: 'Playfair Display';
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.action-list-text p {
+    margin: 10px 0px;
+}
+
+.browser-dash {
+   grid-column: span 7;
+   position: relative;
+   padding-left: 10%;
+   overflow: hidden;
+}
+
+.browser-dash img {
+    -webkit-filter: drop-shadow(5px 10px 10px rgb(34, 34, 34, 0.3));
+    filter: drop-shadow(5px 10px 10px rgb(34, 34, 34, 0.3));
+    height: 300px;
+    
+}
+
+img.main-dash {
+    position: relative;
+    top: 5%;
+    right: 15%;
+}
+
+img.finance-dash {
+  height: 210px;
+  position: relative;
+  bottom: 8%;
+  left: 5%;
+  z-index: 4;
+}
+
+.about {
+    height: 60vh;
+    background-image: url('../../assets/cabin.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.about h1 {
+    font-size: 2vw;
+    line-height: 150%;
+    font-weight: 600;
+    background: rgb(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 0% 15%;
+}
+
+.pricing {
+    height: 40vh;
+    background-color: #f9f6f6;
+    padding: 5% 0%;
+}
+
+.pricing h1 {
+    font-size: 2vw;
+    font-weight: 700;
+    margin-bottom: 2%;
+}
+
+.pricing p {
+    font-size: 1vw;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+
+@media (max-width: 576px) { 
+   .features {
+       position: relative;
+       overflow-x: hidden;
+   }
+    .features-grid {
+        height: fit-content;
+        width: 100%;
+        padding: 10% 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .feature-item {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        padding: 10% 5%;
+        margin: 0;
+    }
+
+    .feature-item .title {
+       margin-bottom: 3%;
+    }
+
+    .feature-item p {
+        font-size: 5vw;
+    }
+
+    .feature-item i {
+        margin-bottom: 0px;
+    }
+
+    .action-list{
+        height: 75vh;
+        grid-template-columns: 1;
+        grid-template-rows: 50% 50%;
+        padding-top: 15%;
+    }
+
+    .browser-dash {
+        grid-row: 1;
+        grid-column: span 12;
+    }
+
+    img.main-dash { 
+        width: 80vw;
+        right: 10%;
+    }
+
+    img.finance-dash {
+        width: 60vw;
+        left: 10%;
+    }
+
+    .browser-dash img {
+        -webkit-filter: drop-shadow(5px 10px 10px rgb(34, 34, 34, 0.3));
+        filter: drop-shadow(0px 0px 5px rgb(34, 34, 34, 0.3));
+    }
+
+    .action-list-text{
+        grid-row: 2;
+        grid-column: span 12;
+        height: fit-content;
+        padding-right: 0;
+        align-items: flex-start;
+        padding-left: 5%;
+        font-size: 5vw;
+        margin-top: 10%;
+    }
+
+    .about {
+        height: 70vh;
+    }
+    .about h1 {
+        padding: 5% 15%;
+        font-size: 5vw;
+        line-height: 180%;
+    }
+
+    .pricing {
+        padding: 0% 5%;
+    }
+    .pricing h1 {
+        font-size: 7vw;
+        text-align: center;
+    }
+
+    .pricing p {
+        display: none;
+    }
+    
+}
+
+@media screen and (device-aspect-ratio: 40/71) {
+    /* Future media query for iPhone 5 aspect ratio */
+}
+

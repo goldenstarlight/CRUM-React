@@ -1,0 +1,76 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.input-box {
+    width: 100%;
+    min-width: 200px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 50px;
+    margin: 10px 0px;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;  
+}
+
+.input-box:focus {
+    outline: none;
+    border: 1px solid #9a9a9a;
+}
+
+
+/* DatePicker CSS */
+.react-date-picker__inputGroup__month {
+    width: max-content !important;
+    text-align: center;
+}
+.react-date-picker__inputGroup__day {
+    width: max-content !important;
+    text-align: center;
+}
+
+.react-date-picker__inputGroup__year {
+    width: max-content !important;
+    text-align: center;
+}
+
+.react-date-picker__wrapper {
+    align-items: center;
+    padding: 2px;
+    border: none !important;
+}
+
+.react-date-picker__clear-button {
+    display: none;
+}
+
+.react-date-picker__calendar * {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.react-date-picker__calendar {
+    position: absolute;
+}
+/* DatePicker CSS */

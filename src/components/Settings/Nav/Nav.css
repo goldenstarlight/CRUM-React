@@ -1,0 +1,23 @@
+.menu-bar{
+    width: 100%;
+    height: 50px;
+    background-color: #f7f7f7;
+    justify-content: flex-start;
+}
+
+.nav-item{
+    height: 50px;
+    width: 120px;
+    list-style: none;
+}
+
+.nav-item:hover{
+    box-shadow: inset 0 -3px 0 #acacac;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+
+.active {
+    box-shadow: inset 0 -3px 0 gray;
+    margin-bottom: 1px;
+}

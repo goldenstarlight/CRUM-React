@@ -1,0 +1,63 @@
+.subscription-modal {
+    background: #f2f2f2;
+    padding: 5%;
+}
+
+.mod-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.sub-card-container {
+    border: 2px solid #878787;
+    border-radius: 5px;
+    padding: 0% 5%;
+    min-width: 400px;  
+    margin-bottom: 5%;
+}
+
+.button-container {
+    width: 400px;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+
+.button-container button {
+    width: fit-content;
+}
+
+button.renew-sub {
+    background: linear-gradient(#879a71, #606f57);
+    border: #606f57;
+    padding: 2%;
+}
+
+.cancel-update {
+    margin-top: 3%;
+}
+
+.cancel-sub-modal {
+    width: 30vw;
+    min-width: 450px;
+    padding: 10%;
+    text-align: center;
+}
+
+.cancel-sub-modal p {
+    font-size: 1.2em;
+    line-height: 150%;
+    margin-top: 0%;
+    margin-bottom: 10%;
+
+}
+
+.sub-info {
+    font-size: 1.2em;
+    margin: 30px 0px;
+    color: black;
+}
+
+.subscription-modal i {
+    margin: 0px 5px;
+}

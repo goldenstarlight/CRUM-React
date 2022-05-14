@@ -1,0 +1,34 @@
+.layout-width {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.app-menu {
+  margin-top: 69px;
+  box-shadow: 2px 2px 12px 0px grey;
+}
+
+.app-menu > .navbar {
+  background-color: white;
+  border-top: 2px solid #ebedee;
+}
+
+.nav-item {
+  width: 174px;
+  text-align: center;
+}
+
+#collapsibleNavbar {
+  margin-left: 64px;
+}
+
+.page-content {
+  padding-top: 50px;
+}
+ .sell-product {
+   margin-top: 125px;
+ }
+
+ .recent-order {
+   margin-top: 470px;
+ }

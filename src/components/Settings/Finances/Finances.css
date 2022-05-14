@@ -1,0 +1,109 @@
+.sub-dashboard {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#9bb182, #606f57);
+}
+
+.year-dropdown {
+    position: absolute;
+    top: 0px;
+    right: 4%;
+    width: 200px;
+    height: 45px;
+}
+
+.finance-container {
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.year-graph {
+   grid-row: span 7;
+   grid-column: span 8;
+   padding: 20px;
+   padding-top: 8%;
+   margin: 0% 5%;
+}
+
+.monthly-figures {
+    grid-row: span 5;
+    grid-column: span 8;
+}
+
+.macro-dashboard {
+    grid-row: span 7;
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    padding: 100px 30px;
+    padding-left: 40px;
+    animation: fadeInMacro 200ms ease-in-out;
+}
+
+.macro-category {
+    color: white;
+}
+
+.tax-container {
+    grid-row: span 5;
+    grid-column: span 4;
+}
+
+.tax-bubble {
+    background: #f0f0f0;
+    border-radius: 5px;
+    height: 80%;
+    width: 80%;
+    padding: 20px;
+}
+
+.small-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.big-number {
+    font-size: 2em;
+    margin-top: 5px;
+}
+
+.monthly-container {
+    width: 90%;
+    height: 80%;
+    background: #f0f0f0;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.month-block {
+    flex: 1 0 15%;
+    height: 45%;
+    margin: 0px 2px;
+    justify-content: space-evenly;
+    animation: 0.5s fadeUp ease-in-out;
+}
+
+.month-name {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.7em;
+}
+
+.month-total {
+    font-size: 1.1em;
+}
+
+@keyframes fadeUp {
+    from {transform: translateY(30px) scale(0.9)}
+    to {transform: translateY(0px) scale(1)}
+}
+
+@keyframes fadeInMacro {
+    from {opacity: 0}
+    to {opacity: 1}
+}

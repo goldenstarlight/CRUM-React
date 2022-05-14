@@ -1,0 +1,90 @@
+.client-dashboard {
+    width: 100%;
+    height: fit-content;
+    min-height: 500px;
+    position: relative;
+    padding: 0px 0px;
+    margin-bottom: 50px;
+    overflow-y: scroll;
+}
+
+.client-loading {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+
+.bar{
+    width: 100%;
+}
+
+.completed {
+    animation: fadeOutComplete 0.5s linear;
+    opacity: 0.5;
+}
+
+.addclient{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+}
+
+.addclient i {
+    font-size: 2em;
+    opacity: 0.6;
+}
+.addclient i:hover {
+    opacity: 1;
+    font-size: 2.2em;
+}
+
+
+.title i {
+    margin-right: 10px;
+}
+
+.sessionmenu{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.full{
+    width: 100%;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.no-client-container{
+    background-color: #eeeeee;
+    color: black;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.no-client-container i {
+    font-size: 60px;
+    position: relative;
+    animation: bounce ease 2s infinite;
+}
+
+.no-client-container h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 20px 20px;
+}
+
+@keyframes bounce {
+    0% {top: 0px}
+    50% {top: 10px}
+    100% {top: 0px}
+}
+
+@keyframes fadeOutComplete {
+    from{opacity: 1;}
+    to{opacity: 0.5;}
+}

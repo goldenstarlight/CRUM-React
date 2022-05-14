@@ -1,0 +1,222 @@
+.dashboard {
+    width: 100%;
+    height: 100vh;
+    background-color: #dadada;
+}
+
+.sessions-dashboard{
+    width: 100%;
+    height: 100vh;
+    background-color: #dadada;
+    display: flex;
+    justify-content: center;
+}
+
+.session-container {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.session{
+    width: 75%;    
+    height: 75px;
+    background: #f4f4f4;
+    margin: 15px;
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 100px;
+    position: relative;
+    animation: fadeSessionsUp 100ms ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.session-menu {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    transform: translateY(50%);
+}
+.session-menu i{
+    color: #484848;
+    font-size: 0.8em;
+    margin: 0px 10px;
+}
+.session-menu i:hover {
+    cursor: pointer;
+}
+
+.session-price-list {
+    color: #5b5b5b;
+    width: 50px;
+}
+
+.session-bubble-container {
+    width: 150px;
+}
+.steps-bubble {
+   
+    padding: 5px;
+    border-radius: 5px;
+   
+
+}
+
+.add {
+    position: absolute;
+    top: 15px;
+    right: 50px;
+}
+.add i {
+    font-size: 1.1em;
+    padding-right: 10px;
+}
+.add:hover{
+    color: #727272;
+    cursor: pointer;
+}
+.session-form{
+    width: auto;
+    min-width: 700px;
+    height: 375px;
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1;
+}
+.title{
+    font-size: 1.3em;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 0;
+}
+
+.session-info{
+    grid-column: 1;
+    padding: 2px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+button.save {
+    font-weight: 600;
+    margin-top: 20px;
+    display: flex;
+    justify-self: flex-end;
+    align-self: flex-end;
+    background: #2d2d2d;
+    border: none;
+}
+
+button.save:hover {
+    background: #4b4b4b;
+}
+
+.color-menu{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0px;
+}
+
+.session-type {
+    padding: 5px 15px;
+    margin-right: 10px;
+}
+
+.actioninfo{
+    grid-column: 2;
+    padding-top: 20px;
+    
+}
+
+.action-item{
+    width: 100%;
+    min-width: 200px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    margin: 10px 0px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.action-item p {
+    max-width: 70%;
+    height: fit-content;
+    padding: 1% 0%;
+    font-size: 0.9em;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.action-item i{
+    margin-right: 10px;
+}
+.action-item:hover {
+    cursor: move;
+}
+
+.deleteitem{
+    position: absolute;
+    right: 20px;
+    opacity: 0.5;
+    font-size: 0.9em;
+}
+.deleteitem:hover{
+    opacity: 1;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    margin-top: -20px;
+}
+
+.no-sessions-prompt {
+    width: 100%;
+    height: 90vh;
+    padding: 0% 20%;
+    text-align: center;
+}
+
+.no-sessions-prompt h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.no-sessions-prompt i {
+    font-size: 5em;
+    margin-bottom: 10px;
+    position: relative;
+    animation: bounce ease 2s infinite;
+}
+
+.no-sessions-prompt p {
+    line-height: 200%;
+    font-size: 1.1em;
+}
+
+
+
+@keyframes fadeSessionsUp {
+    from {top: 20px; opacity: 0;}
+    to {top: 0px; opacity: 1;}
+}

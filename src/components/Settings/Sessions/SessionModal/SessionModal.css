@@ -1,0 +1,29 @@
+.bubble-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.bubble-display {
+    min-width: 75px;
+    min-height: 1.2em;
+    padding: 5px 10px;
+}
+
+.action-container {
+    width: 90%;
+    height: 300px;
+    overflow-y: scroll;
+    padding: 0px 20px;
+}
+
+.session-action-panel {
+    width: auto;
+    padding-bottom: 10%; 
+    overflow: hidden;
+}
+.session-title {
+    font-size: 1.1em;
+    color: black;
+}

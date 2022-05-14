@@ -1,0 +1,206 @@
+.sidebar{
+    width: 20vw;
+    min-width: 200px;
+    height: 100vh;
+    border-right: 1px solid #e2e2e2;
+    position: relative;
+    overflow-x: hidden;
+}
+.topbar{
+    height: 50px;
+    border-bottom: 1px solid #e2e2e2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.topbar i:hover {
+    color: #676767;
+    cursor: pointer;
+}
+.profileimage{
+    width: 30px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.menu-item {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.menu-item:hover .menu-icon{
+    opacity: 1;
+}
+
+.menu-item i {
+    margin-right: 10px;
+}
+
+.list-item{
+    width: 100%;
+    min-width: 200px;
+    background: white;
+    height: 45px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-left: 40px;
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+.list-item:active {
+    border: 1px solid #808080;
+}
+
+.list-item i {
+    cursor: pointer;
+}
+
+.list-item:hover {
+    background-color: #f9f6f6;
+    border-right: 4px solid #808080;
+}
+
+.current-list {
+    background-color: #f9f6f6;
+    border-right: 4px solid #e2e2e2;
+}
+
+.current-list:hover .menu-icon {
+    opacity: 1;
+}
+
+.menu-icon {
+    color: #808080;
+    opacity: 0;
+    width: 20px;
+}
+
+.add-icon {
+    position: absolute;
+    right: 15px;
+}
+
+.options-icon {
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+}
+
+.menu-icon:hover {
+    color: #676767;
+    font-size: 1.2em;
+}
+
+.list-modal {
+    width: 30vw;
+    min-width: 400px;
+    height: fit-content;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin: 30px 20px;
+}
+
+.modal-title i {
+    margin-right: 10px;
+}
+
+.options-menu {
+    background: black;
+    color: white;
+    width: fit-content;
+    height: 70px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    animation: fadeUp .1s linear;
+    -webkit-box-shadow: 10px 10px 55px -6px rgba(0,0,0,0.2);
+    -moz-box-shadow: 10px 10px 55px -6px rgba(0,0,0,0.2);
+    box-shadow: 10px 10px 55px -6px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.sidebar-edit {
+    left: 15px;
+}
+
+.options-menu p {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    padding-right: 45px;
+    font-size: 0.9em;
+}
+
+.options-menu p:hover {
+    cursor: pointer;
+    background: #262626;
+}
+
+.options-menu i {
+    margin-right: 10px;
+}
+
+.user-menu {
+    top: 6%;
+    left: 15%;
+    height: 105px;
+    padding-right: -10px;
+}
+
+div.delete-list-modal-check p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+div.delete-list-modal-check select {
+    margin-bottom: 20px;
+}
+
+.sidebar-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0.2;
+}
+
+.sidebar-footer img {
+    height: 20px;
+}
+
+.sidebar-footer i {
+    cursor: pointer;
+}
+
+.sidebar-footer a {
+    font-size: 0.5em;
+}
+
+@keyframes fadeUp {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@media (max-width: 576px) { 
+    .sidebar {
+        display: none;
+    }
+}
